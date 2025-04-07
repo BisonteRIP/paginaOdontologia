@@ -1,0 +1,23 @@
+---
+const { title, text } = Astro.props;
+---
+
+<div class="flex flex-col cursor-pointer h-auto transition-all duration-300 border border-border-color shadow-sm">
+    <h3 id="title_service">{title}</h3>
+    <p id="text_service" class="text-black-text overflow-hidden transition-all duration-300 max-h-0 opacity-0">{text}</p>
+</div>
+
+<script is:inline>
+    const titleService = document.getElementById("title_service");
+    const textService = document.getElementById("text_service");
+
+    titleService.addEventListener("click",()=>{
+        titleService.classList.toggle("hideen");
+
+    textService.classList.toggle('max-h-0');
+    textService.classList.toggle('opacity-0');
+    textService.classList.toggle('max-h-[500px]');
+    textService.classList.toggle('opacity-100');
+    textService.classList.toggle('mt-2');
+    });
+</script>

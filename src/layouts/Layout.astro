@@ -2,6 +2,9 @@
 import Header from "../components/header.astro"
 import HeaderContact from "../components/header_contact.astro";
 import "./src/styles/global.css";
+import Button_1 from "../components/button_1.astro";
+import Servicios from "../components/servicios.astro";
+
 ---
 
 <!doctype html>
@@ -13,9 +16,39 @@ import "./src/styles/global.css";
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<HeaderContact />
-		<Header />
+		
+		<main class="flex flex-col w-full h-screen overflow-hidden">
+			<div class="w-full">
+				<HeaderContact />
+				<Header />
+			</div>
+			<img 
+				src="/Imagenes/1x/consultorio_blur.webp" 
+				alt="Consultorio" 
+				class="w-full h-screen object-cover absolute top-0 right-0 brightness-90 -z-10" 
+			/>
+			<div class="flex flex-col z-10 p-[8%]">
+				<h1 class="text-sky-blue text-2xl font-bold drop-shadow-md">Servicio <span class="text-black-text">Odontologico</span></h1>
+				<h2 class="text-black-text text-6xl drop-shadow-md font-bold">Transformando <span class="text-sky-blue">sonrisas </span><br>mejorando <span class="text-sky-blue">vidas</span></h2>
+				<Button_1 name="Reserve su cita" />
+			</div>
+			
+		</main>
 	</body>
+	<section>
+		<div class="px=[8%] py-10 grid grid-cols-1 grid-rows-2 gap-4">
+			<h1>NUESTROS SERVICIOS</h1>
+			<div>
+				<div>
+					<Servicios 
+					title="Extracciones" 
+					text="los dientes de leche son reemplazados por dientes permanentes, lo que puede causar molestias y dolor. En algunos casos, los dientes de leche pueden no caer por sí solos y pueden necesitar ser extraídos para permitir que los dientes permanentes crezcan adecuadamente."
+					/>
+				</div>
+				<img src="./../../public/Imagenes/dientes_modelo.webp" alt="">
+			</div>
+		</div>
+	</section>
 </html>
 
 

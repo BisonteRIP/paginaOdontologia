@@ -4,18 +4,23 @@
 @import "tailwindcss";
 
 @theme {
+    --color-border-color: rgba(0,0,0,0.3);
     --color-sky-blue: #87CEEB; 
     --color-black-text: #333333;
     --color-semi-transparent: rgba(255, 255, 255, 0.5);
   }
 
-  @theme {
+@theme {
     --font-open-sans: 'Open Sans', sans-serif;
     --font-montserrat: 'Montserrat', sans-serif;
-  }
-  @theme {
+}
+@theme {
     --text-shadow: 0px 4px 6px rgba(0,0,0,0.4);
-  }
-  html{
+}
+html{
     font-family: montserrat;
-  }
+}
+.container{
+  font-size: clamp(1rem, 5vw, 2rem);
+  width: clamp(320px, 90%, 1200px);
+}
