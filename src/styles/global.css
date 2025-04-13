@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 @theme {
-    --color-border-color: rgba(0,0,0,0.3);
+    --color-border-color: rgba(0,0,0,0.1);
     --color-sky-blue: #87CEEB; 
     --color-black-text: #333333;
     --color-semi-transparent: rgba(255, 255, 255, 0.5);
