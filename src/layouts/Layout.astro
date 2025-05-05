@@ -1,9 +1,5 @@
 ---
-import Header from "../components/header.astro"
-import HeaderContact from "../components/header_contact.astro";
 import "./src/styles/global.css";
-import Button_1 from "../components/button_1.astro";
-import Servicios from "../components/servicios.astro";
 
 ---
 
@@ -17,58 +13,8 @@ import Servicios from "../components/servicios.astro";
 	</head>
 	<body>
 		
-		<main class="flex flex-col w-full h-screen overflow-hidden">
-			<div class="w-full">
-				<HeaderContact />
-				<Header />
-			</div>
-			<img 
-				src="/Imagenes/1x/consultorio_blur.webp" 
-				alt="Consultorio" 
-				class="w-full h-screen object-cover absolute top-0 right-0 brightness-90 -z-10" 
-			/>
-			<div class="flex flex-col z-10 p-[8%]">
-				<h1 class="text-sky-blue text-2xl font-bold drop-shadow-md">Servicio <span class="text-black-text">Odontologico</span></h1>
-				<h2 class="text-black-text text-6xl drop-shadow-md font-bold">Transformando <span class="text-sky-blue">sonrisas </span><br>mejorando <span class="text-sky-blue">vidas</span></h2>
-				<Button_1 name="Reserve su cita" />
-			</div>
-			
-		</main>
+
 	</body>
-	<section class="flex items-center justify-center w-full h-auto">
-		<div class=" p-[4%] my-16 flex flex-col gap-4 w-auto border border-border-color">
-			<h2 class="font-bold text-2xl text-center">NUESTROS SERVICIOS</h2>
-			<div class="flex">
-				<div>
-					<Servicios 
-					title="Valoracion Dental" 
-					text="los dientes de leche son reemplazados por dientes permanentes, lo que puede causar molestias y dolor. En algunos casos, los dientes de leche pueden no caer por sí solos y pueden necesitar ser extraídos para permitir que los dientes permanentes crezcan adecuadamente."
-					/>
-					<Servicios 
-					title="Limpieza Dental" 
-					text="los dientes de leche son reemplazados por dientes permanentes, lo que puede causar molestias y dolor. En algunos casos, los dientes de leche pueden no caer por sí solos y pueden necesitar ser extraídos para permitir que los dientes permanentes crezcan adecuadamente."
-					/>
-					<Servicios 
-					title="Restauraciones" 
-					text="los dientes de leche son reemplazados por dientes permanentes, lo que puede causar molestias y dolor. En algunos casos, los dientes de leche pueden no caer por sí solos y pueden necesitar ser extraídos para permitir que los dientes permanentes crezcan adecuadamente."
-					/>
-					<Servicios 
-					title="Blanqueamiento" 
-					text="los dientes de leche son reemplazados por dientes permanentes, lo que puede causar molestias y dolor. En algunos casos, los dientes de leche pueden no caer por sí solos y pueden necesitar ser extraídos para permitir que los dientes permanentes crezcan adecuadamente."
-					/>
-					<Servicios 
-					title="Extracciones" 
-					text="los dientes de leche son reemplazados por dientes permanentes, lo que puede causar molestias y dolor. En algunos casos, los dientes de leche pueden no caer por sí solos y pueden necesitar ser extraídos para permitir que los dientes permanentes crezcan adecuadamente."
-					/>
-					<Servicios 
-					title="Protesis Dentales" 
-					text="los dientes de leche son reemplazados por dientes permanentes, lo que puede causar molestias y dolor. En algunos casos, los dientes de leche pueden no caer por sí solos y pueden necesitar ser extraídos para permitir que los dientes permanentes crezcan adecuadamente."
-					/>
-				</div>
-				<div class="bg-[url(../../public/Imagenes/dientes_molde.webp)] bg-cover bg-center bg-no-repeat w-96 h-auto m-4"></div>
-			</div>
-		</div>
-	</section>
 </html>
 
 
